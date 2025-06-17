@@ -1,116 +1,84 @@
 ✅ Passo a Passo – Comandos Git Essenciais
 📍 Configuração inicial (Somente na primeira vez)
-bash
-Copiar
-Editar
+
+
 git config --global user.name "Seu Nome"
 git config --global user.email "seuemail@gmail.com"
 👉 (Configura seu nome e e-mail no Git)
 
 📍 Criar um novo repositório local
-bash
-Copiar
-Editar
+
+
 git init
 👉 (Inicia o controle de versão dentro da pasta atual)
 
 📍 Verificar o status dos arquivos
-bash
-Copiar
-Editar
+
+
 git status
 👉 (Mostra quais arquivos foram modificados, adicionados ou ainda não rastreados)
 
 📍 Adicionar arquivos para o commit (staging area)
-bash
-Copiar
-Editar
+
+
 git add nome-do-arquivo
 👉 Exemplo:
 
-bash
-Copiar
-Editar
+
+
 git add index.html
 👉 Ou adicionar todos os arquivos de uma vez:
 
-bash
-Copiar
-Editar
+
+
 git add .
 📍 Criar um commit (salvar um "ponto no tempo")
-bash
-Copiar
-Editar
+
 git commit -m "Sua mensagem de commit"
 👉 Exemplo:
 
-bash
-Copiar
-Editar
+
 git commit -m "Adicionando nova página de contato"
 📍 Conectar o repositório local ao GitHub (se for o primeiro push)
-bash
-Copiar
-Editar
+
 git remote add origin https://github.com/seuusuario/nomedorepo.git
 👉 Depois definir a branch principal:
 
-bash
-Copiar
-Editar
+
 git branch -M main
 📍 Enviar os commits para o GitHub (push)
-bash
-Copiar
-Editar
+
 git push -u origin main
 👉 Depois disso, nos próximos pushes, basta:
 
-bash
-Copiar
-Editar
+
 git push
 📍 Baixar atualizações do repositório remoto (pull)
-bash
-Copiar
-Editar
+
 git pull
 👉 (Garante que você está com a última versão antes de começar a mexer)
 
 📍 Criar um novo branch (opcional, quando quiser trabalhar separado)
-bash
-Copiar
-Editar
+
 git checkout -b nome-do-branch
 👉 Exemplo:
 
-bash
-Copiar
-Editar
+
 git checkout -b feature-login
 📍 Trocar de branch
-bash
-Copiar
-Editar
+
 git checkout nome-do-branch
 📍 Mesclar um branch (merge)
 Primeiro vá para a branch onde quer fazer o merge (exemplo: main):
 
-bash
-Copiar
-Editar
+
 git checkout main
 Depois:
 
-bash
-Copiar
-Editar
+
 git merge nome-do-branch
 📍 Ver histórico de commits
-bash
-Copiar
-Editar
+
 git log
 👉 (Para ver o histórico detalhado de tudo que foi feito)
 
@@ -119,9 +87,7 @@ Dentro da raiz do projeto, crie um arquivo chamado .gitignore e adicione o nome 
 
 Exemplo de conteúdo:
 
-bash
-Copiar
-Editar
+
 node_modules/
 .env
 *.log
